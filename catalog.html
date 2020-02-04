@@ -31,19 +31,74 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <aside class="catalog-filter">
           <h3 class="visually-hidden">Фильтр товаров</h3>
-           <!--Здесь будет форма-->
+          <form class="filter-form" action="https://???" method="get">
+            <fieldset>
+              <legend>Стоимость:</legend>
+              <div class="range-slider">
+                <input type="number" value="0" name="min">
+                <input type="number" value="15000" name="max">
+                <div class="range-slider-track">
+                  <div class="range-slider-pin range-slider-pin-min"></div>
+                  <div class="range-slider-pin range-slider-pin-max"></div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="site-grid" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="site-grid" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="site-grid" value="fluid" id="filter-fluid">
+                  <label for="filter-fluid">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="features" id="filter-features">
+                  <label for="filter-features">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
         </aside>
         <div class="catalog-sort">
           <h3 class="visually-hidden">Сортировка товаров</h3>
           <p>Сортировать:</p>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По названию</li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
           </ul>
           <ul>
-            <li><span class="visually-hidden">По убыванию</span></li>
-            <li><span class="visually-hidden">По возрастанию</span></li>
+            <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+            <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
           </ul>
         </div>
         <main class="catalog-list">
@@ -124,7 +179,7 @@
     <section class="map">
       <div class="container">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="img/map.png" width="1440" height="416" alt="Карта">
+        <img src="img/map.png" width="1440" height="416" alt="Адрес студии: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <img src="img/map-marker.png" width="231" height="190" alt="Маркер студии">
         <div class="write-us">
           <h2>NЁRDS DESIGN STUDIO</h2>
@@ -137,7 +192,22 @@
     </section>
     <section class="write-us-modal">
       <h2>Напишите нам</h2>
-      <!--Здесь будет форма-->
+      <form class="write-us-form" action="https://???" method="post">
+        <p>
+          <label for="write-name">Ваше имя:</label>
+          <input id="write-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="write-email">Ваш e-mail:</label>
+          <input id="write-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="write-comment">Текст письма:</label>
+          <textarea id="write-comment" name="comment" rows="5">В свободной форме</textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <footer class="main-footer">
       <div class="container">

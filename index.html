@@ -147,7 +147,7 @@
     <section class="map">
       <div class="container">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="img/map.png" width="1440" height="416" alt="Карта">
+        <img src="img/map.png" width="1440" height="416" alt="Адрес студии: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <img src="img/map-marker.png" width="231" height="190" alt="Маркер студии">
         <div class="write-us">
           <h2>NЁRDS DESIGN STUDIO</h2>
@@ -160,7 +160,22 @@
     </section>
     <section class="write-us-modal">
       <h2>Напишите нам</h2>
-      <!--Здесь будет форма-->
+      <form class="write-us-form" action="https://???" method="post">
+        <p>
+          <label for="write-name">Ваше имя:</label>
+          <input id="write-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="write-email">Ваш e-mail:</label>
+          <input id="write-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="write-comment">Текст письма:</label>
+          <textarea id="write-comment" name="comment" rows="5">В свободной форме</textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <footer class="main-footer">
       <div class="container">
