@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов NЁRD'S</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -42,26 +45,26 @@
             <fieldset>
               <legend>Сетка:</legend>
               <div class="radio">
-                <input class="radio-input" type="radio" name="site-grid" value="adaptive" id="filter-adaptive" checked>
+                <input class="filter-input radio-input" type="radio" name="site-grid" value="adaptive" id="filter-adaptive" checked>
                 <label class="radio-label" for="filter-adaptive">Адаптивная</label>
-                <input class="radio-input" type="radio" name="site-grid" value="fixed" id="filter-fixed">
+                <input class="filter-input radio-input" type="radio" name="site-grid" value="fixed" id="filter-fixed">
                 <label class="radio-label" for="filter-fixed">Фиксированная</label>
-                <input class="radio-input" type="radio" name="site-grid" value="fluid" id="filter-fluid">
+                <input class="filter-input radio-input" type="radio" name="site-grid" value="fluid" id="filter-fluid">
                 <label class="radio-label" for="filter-fluid">Резиновая</label>
               </div>  
             </fieldset>
             <fieldset>
               <legend>Особенности:</legend>
               <div class="checkbox">
-                <input class="checkbox-input" type="checkbox" name="slider" id="filter-slider" checked>
+                <input class="filter-input checkbox-input" type="checkbox" name="slider" id="filter-slider" checked>
                 <label class="checkbox-label" for="filter-slider">Слайдер</label>
-                <input class="checkbox-input" type="checkbox" name="features" id="filter-features">
+                <input class="filter-input checkbox-input" type="checkbox" name="features" id="filter-features">
                 <label class="checkbox-label" for="filter-features">Блок преимуществ</label>
-                <input class="checkbox-input" type="checkbox" name="news" id="filter-news" checked>
+                <input class="filter-input checkbox-input" type="checkbox" name="news" id="filter-news" checked>
                 <label class="checkbox-label" for="filter-news">Новости</label>
-                <input class="checkbox-input" type="checkbox" name="gallery" id="filter-gallery">
+                <input class="filter-input checkbox-input" type="checkbox" name="gallery" id="filter-gallery">
                 <label class="checkbox-label" for="filter-gallery">Галерея</label>
-                <input class="checkbox-input" type="checkbox" name="basket" id="filter-basket">
+                <input class="filter-input checkbox-input" type="checkbox" name="basket" id="filter-basket">
                 <label class="checkbox-label" for="filter-basket">Корзина</label>
               </div>
             </fieldset>
@@ -87,7 +90,7 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona">
-                <div>
+                <div class="item-info">
                   <a href="#">
                     <h4>Sedona</h4>
                   </a>
@@ -97,7 +100,7 @@
               </li>
               <li class="catalog-item">
                 <img src="img/img-pink.jpg" width="360" height="576" alt="Приложение Pink">
-                <div>
+                <div class="item-info">
                   <a href="#">
                     <h4>Pink App</h4>
                   </a>
@@ -107,7 +110,7 @@
               </li>
               <li class="catalog-item">
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Barbershop">
-                <div>
+                <div class="item-info">
                   <a href="#">
                     <h4>Barbershop</h4>
                   </a>
@@ -117,7 +120,7 @@
               </li>
               <li class="catalog-item">
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт Mishka">
-                <div>
+                <div class="item-info">
                   <a href="#">
                     <h4>Mishka</h4>
                   </a>
@@ -127,7 +130,7 @@
               </li>
               <li class="catalog-item">
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт A Plus">
-                <div>
+                <div class="item-info">
                   <a href="#">
                     <h4>A Plus</h4>
                   </a>
@@ -137,7 +140,7 @@
               </li>
               <li class="catalog-item">
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт Кваст">
-                <div>
+                <div class="item-info">
                   <a href="#">
                     <h4>Кваст</h4>
                   </a>
@@ -172,6 +175,19 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-links">
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <div class="discount">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>  
+    </footer>
     <section class="write-us-modal">
       <h2>Напишите нам</h2>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
@@ -191,18 +207,5 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <footer class="footer">
-      <div class="container">
-        <ul class="social-links">
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
-        </ul>
-        <div class="discount">
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </div>  
-    </footer>
   </body>
 </html>
