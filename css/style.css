@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -71,13 +71,13 @@ a {
 
 .menu a:hover,
 .menu a:focus,
-a.basket:hover,
-a.basket:focus {
+.basket:hover,
+.basket:focus {
     color: #fb565a;
 }
 
 .menu a:active,
-a.basket:active {
+.basket:active {
     color: #000000;
     opacity: 0.3;
 }
@@ -96,33 +96,28 @@ a.basket:active {
     opacity: 0.3;
 }
 
-.slides {
+.slides-list {
     list-style: none;
 }
 
-.slides li:first-child {
-    background-color: #eeeeee;
-    background-image: url("../img/slide-1.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-
-.slides li:nth-child(2) {
-    background-color: #eeeeee;
-    background-image: url("../img/slide-2.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-
-.slides li:nth-child(3) {
-    background-color: #eeeeee;
-    background-image: url("../img/slide-3.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-
-.slide p {
+.slides-item {
     text-align: left;
+
+    background-color: #eeeeee;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.slides-item:nth-child(1) {
+    background-image: url("../img/slide-1.png");
+}
+
+.slides-item:nth-child(2) {
+    background-image: url("../img/slide-2.png");
+}
+
+.slides-item:nth-child(3) {
+    background-image: url("../img/slide-3.png");
 }
 
 .slogan {
@@ -136,12 +131,12 @@ a.basket:active {
     list-style: none;
 }
 
-.service-item h3,
-.service-item p {
+.services-item title,
+.services-item-description {
     text-align: left;
 }
 
-.service-item h3 {
+.services-item-title {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -149,31 +144,31 @@ a.basket:active {
     text-transform: uppercase;
 }
 
-.service-item:nth-of-type(2) .button {
+.button-green {
     background-color: #00ca74;
 }
 
-.service-item:nth-of-type(2) .button:hover,
-.service-item:nth-of-type(2) .button:focus {
+.button-green:hover,
+.button-green:focus {
     background-color: #00bc6c;
 }
 
-.service-item:nth-of-type(2) .button:active {
+.button-green:active {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #00aa62;
 }
 
-.service-item:nth-of-type(3) .button {
+.button-yellow {
     background-color: #efc84a;
 }
 
-.service-item:nth-of-type(3) .button:hover,
-.service-item:nth-of-type(3) .button:focus {
+.button-yellow:hover,
+.button-yellow:focus {
     background-color: #eab534;
 }
 
-.service-item:nth-of-type(3) .button:active {
+.button-yellow:active {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #e5a722;
@@ -183,65 +178,69 @@ a.basket:active {
     list-style: none;
 }
 
-.about-left {
+.about-main-info,
+.about-additional-services {
     text-align: left;
 }
 
-.about-right {
+.about-additional-numbers {
     text-align: center;
 }
 
-.about-left h4 {
+.about-main-info h4 {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    color: #000000; 
+    color: #000000;
 }
 
-.about-left:nth-of-type(2) p,
-.about-right p {
+.about-additional p {
     font-weight: 700;
     color: #000000;
 }
 
-.about-right span {
-    font-size: 45px;
-    line-height: 10px;
-    font-weight: 700;
-    color: #000000;
-}
-
-.about-right li {
+.about-additional-numbers li {
     line-height: 18px;
 
     text-align: left;
+}
+
+.about-additional-numbers span {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #000000;
 }
 
 .clients-list {
     list-style: none;
 }
 
-/*.clients-item a:hover,
-.clients-item a:focus {
-
+.clients-item-logo {
+    opacity: 0.2;
 }
 
-.clients-item a:active {
+.clients-item-logo:hover,
+.clients-item-logo:focus {
+    opacity: 1;
+}
 
-}*/
+.clients-item-logo:active {
+    opacity: 0.1;
+}
 
 .write-us {
     text-align: left;
 }
 
-.write-us h2 {
+.write-us-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
     color: #000000;
 }
 
-.write-us p {
+.write-us-address {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -268,17 +267,19 @@ a.basket:active {
 }
 
 .social-button:active {
+    color: rgba(255, 255, 255, 0.3);
+
     background-color: #d7373b;
 }
 
-.discount p:first-child {
+.discount-slogan {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
     color: #000000;
 }
 
-.discount p:last-child {
+.discount-info {
     line-height: 22px;
     color: #444444;
 }
@@ -296,7 +297,7 @@ a.basket:active {
     border: none;
 }
 
-.filter-form legend {
+.filter-form-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -304,36 +305,34 @@ a.basket:active {
     text-transform: uppercase;
 }
 
-/*.filter-input + label {
-    color: ;
-}
-.filter-input:hover + label,
-.filter-input:focus + label {
-    color: ;
+.radio-label,
+.checkbox-label {
+    line-height: 20px;
 }
 
-.filter-input:disabled + label {
+.radio-input:disabled + label,
+.checkbox-input:disabled + label {
     opacity: 0.3;
-}*/
+}
 
-.filter-form .button {
+.filter-form-button {
     color: #000000;
 
     background-color: #eeeeee;
 }
 
-.filter-form .button:hover,
-.filter-form .button:focus {
+.filter-form-button:hover,
+.filter-form-button:focus {
     background-color: #dfdfdf;
 }
 
-.filter-form .button:active {
+.filter-form-button:active {
     opacity: 0.3;
 
     background-color: #d5d5d5;
 }
 
-.catalog-sort p {
+.sort-title {
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -341,7 +340,8 @@ a.basket:active {
     text-transform: uppercase;
 }
 
-.sort-list {
+.sort-list,
+.sort-arrows {
     list-style: none;
 }
 
@@ -362,19 +362,21 @@ a.basket:active {
 
 .sort-item a:active {
     color: #000000;
+
+    opacity: 1;
 }
 
 .catalog-list {
     list-style: none;
 }
 
-.item-info {
+.item-info-info {
     text-align: center;
 
     background-color: #eeeeee;
 }
 
-.item-info a {
+.catalog-item-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -382,17 +384,17 @@ a.basket:active {
     text-transform: uppercase;
 }
 
-.item-info a:hover,
-.item-info a:focus {
+.catalog-item-title:hover,
+.catalog-item-title:focus {
     color: #fb565a;
 }
 
-.item-info a:active {
+.catalog-item-title:active {
     color: #000000;
     opacity: 0.3;
 }
 
-.item-info p {
+.catalog-item-description {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
