@@ -52,12 +52,11 @@ a {
 
 .header {
     padding-top: 49px;
-    margin-bottom: 18px;
 
     background-color: #eeeeee;
 }
 
-.header .container {
+.container {
     width: 1160px;
     margin-right: auto;
     margin-left: auto;
@@ -81,6 +80,9 @@ a {
 }
 
 .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 446px;
     margin: 0;
     padding: 0;
@@ -133,15 +135,10 @@ a {
 }
 
 .slider {
+    padding-top: 67px;
     margin-bottom: 80px;
 
     background-color: #eeeeee;
-}
-
-.slider .container {
-    width: 1160px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .slides-list {
@@ -152,7 +149,7 @@ a {
 }
 
 .slides-item {
-    height: 413px;
+    height: 430px;
 
     text-align: left;
 
@@ -174,6 +171,9 @@ a {
 }
 
 .slogan {
+    margin-top: 0;
+    margin-bottom: 28px;
+
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -182,12 +182,6 @@ a {
 
 .services {
     margin-bottom: 80px;
-}
-
-.services .container {
-    width: 1160px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .services-list {
@@ -245,12 +239,6 @@ a {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #e5a722;
-}
-
-.about .container {
-    width: 1160px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .about-main {
@@ -311,7 +299,15 @@ a {
     color: #000000;
 }
 
+.about-additional-numbers ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .about-additional-numbers li {
+    width: 120px;
+
     line-height: 18px;
 
     text-align: left;
@@ -322,16 +318,12 @@ a {
     line-height: 45px;
     font-weight: 700;
     color: #000000;
+
+    text-align: center;
 }
 
 .clients {
     margin-bottom: 80px;
-}
-
-.clients .container {
-    width: 1160px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .clients-list {
@@ -346,7 +338,8 @@ a {
 }
 
 .clients-item {
-    width: 280px;
+    width: 290px;
+    text-align: center;
 }
 
 .clients-item-logo {
@@ -400,6 +393,9 @@ a {
 }
 
 .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 260px;
     margin: 0;
     margin-right: 139px;
@@ -468,6 +464,8 @@ a {
 }
 
 .filter-form fieldset {
+    margin: 0;
+    padding: 0;
     border: none;
 }
 
@@ -477,6 +475,12 @@ a {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+}
+
+.radio,
+.checkbox {
+    display: flex;
+    flex-direction: column;
 }
 
 .radio-label,
@@ -513,7 +517,15 @@ a {
     justify-content: space-between;
 }
 
+.catalog-sort {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
 .sort-title {
+    margin-right: 267px;
+
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -523,10 +535,17 @@ a {
 
 .sort-list,
 .sort-arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 
     list-style: none;
+}
+
+.sort-list {
+    width: 271px;
 }
 
 .sort-item a {
@@ -599,11 +618,18 @@ a {
 }
 
 .pagination-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     margin-bottom: 60px;
 
     list-style: none;
+}
+
+.pagination-item {
+    margin-right: 11px;
 }
 
 .pagination-item a {
