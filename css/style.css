@@ -75,10 +75,6 @@ a {
     text-transform: uppercase;
 }
 
-.header-inner {
-    margin-bottom: 60px;
-}
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -120,8 +116,6 @@ a {
 }
 
 .logo {
-    width: 160px;
-    height: 65px;
     margin-right: 202px;
 }
 
@@ -383,9 +377,6 @@ a {
 }
 
 .footer .container {
-    width: 1160px;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -439,6 +430,8 @@ a {
 
 .header-title {
     padding-bottom: 116px;
+    margin-top: 82px;
+    margin-bottom: 0;
 
     font-size: 55px;
     line-height: 55px;
@@ -450,9 +443,6 @@ a {
 }
 
 .catalog .container {
-    width: 1160px;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
