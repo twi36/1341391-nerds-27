@@ -78,13 +78,17 @@ a {
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 446px;
+    max-width: 450px;
     margin: 0;
     padding: 0;
-    margin-right: auto;
+    padding-top: 7px;
+    padding-right: 80px;
 
     list-style: none;
+}
+
+.menu-item + .menu-item {
+    margin-left: 46px;
 }
 
 .menu a,
@@ -112,11 +116,11 @@ a {
 
 .basket {
     display: block;
-    width: 115px;
+    padding-top: 7px;
 }
 
 .logo {
-    margin-right: 202px;
+    margin-right: 0;
 }
 
 .logo:hover,
