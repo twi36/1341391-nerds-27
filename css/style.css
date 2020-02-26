@@ -229,21 +229,21 @@ a {
     background-position: 401px bottom;
 }
 
-#button-1:checked ~ .slides-list .slides-item:nth-child(1) {
+.slider-input:nth-of-type(1):checked ~ .slides-list .slides-item:nth-child(1) {
     display: block;
 }
 
-#button-2:checked ~ .slides-list .slides-item:nth-child(2) {
+.slider-input:nth-of-type(2):checked ~ .slides-list .slides-item:nth-child(2) {
     display: block;
 }
 
-#button-3:checked ~ .slides-list .slides-item:nth-child(3) {
+.slider-input:nth-of-type(3):checked ~ .slides-list .slides-item:nth-child(3) {
     display: block;
 }
 
-#button-1:checked ~ .slider-controls label[for="button-1"]::before,
-#button-2:checked ~ .slider-controls label[for="button-2"]::before,
-#button-3:checked ~ .slider-controls label[for="button-3"]::before {
+.slider-input:nth-of-type(1):checked ~ .slider-controls label[for="button-1"]::before,
+.slider-input:nth-of-type(2):checked ~ .slider-controls label[for="button-2"]::before,
+.slider-input:nth-of-type(3):checked ~ .slider-controls label[for="button-3"]::before {
     content: "";
     position: absolute;
     top: 5px;
