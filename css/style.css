@@ -49,7 +49,6 @@ a {
     font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
-
     text-align: center;
     vertical-align: middle;
 
@@ -162,12 +161,14 @@ a {
 .menu-item-current a::after,
 .basket-current::after {
     content: "";
+
     position: absolute;
-    width: 100%;
-    height: 2px;
     bottom: -5px;
     left: 0;
 
+    width: 100%;
+    height: 2px;
+    
     background-color: #fb565a;
 }
 
@@ -186,6 +187,7 @@ a {
 
 .slider {
     position: relative;
+
     height: 421px;
     margin-bottom: 80px;
 
@@ -210,8 +212,10 @@ a {
 
 .slider-input {
     position: absolute;
+
     width: 1px;
     height: 1px;
+
     overflow: hidden;
     clip: rect(0 0 0 0);
 }
@@ -227,13 +231,15 @@ a {
 }
 
 .slider-label {
-    display: inline-block;
     position: relative;
+    
+    display: inline-block;
     width: 18px;
     height: 18px;
-    border-radius: 50%;
 
     background-color: #ffffff;
+    
+    border-radius: 50%;
 
     cursor: pointer;
 }
@@ -273,6 +279,7 @@ a {
 .slider-input:nth-of-type(2):checked ~ .slider-controls label[for="button-2"]::before,
 .slider-input:nth-of-type(3):checked ~ .slider-controls label[for="button-3"]::before {
     content: "";
+
     position: absolute;
     top: 5px;
     left: 5px;
@@ -317,9 +324,9 @@ a {
 }
 
 .services .container {
-    border-bottom: 2px solid #eeeeee;
-
     padding-bottom: 80px;
+
+    border-bottom: 2px solid #eeeeee;
 }
 
 .services-list {
@@ -435,7 +442,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     margin-bottom: 60px;
 }
 
@@ -460,11 +466,13 @@ a {
 
 .about-additional-services li::before {
     content: "";
+
     position: absolute;
-    width: 25px;
-    height: 2px;
     top: 23px;
     left: 0;
+    
+    width: 25px;
+    height: 2px;
 
     background-color: #fb565a;
 }
@@ -503,6 +511,7 @@ a {
 
 .about-additional-numbers p {
     margin-bottom: 42px;
+    padding-left: 2px;
 }
 
 .about-additional-numbers ul {
@@ -515,7 +524,6 @@ a {
     width: 120px;
 
     line-height: 18px;
-
     text-align: left;
 }
 
@@ -527,7 +535,6 @@ a {
     line-height: 45px;
     font-weight: 700;
     color: #000000;
-
     text-align: center;
 }
 
@@ -540,11 +547,11 @@ a {
 }
 
 .clients .container {
-    border-top: 2px solid #eeeeee;
-    border-bottom: 2px solid #eeeeee;
-
     padding-top: 46px;
     padding-bottom: 44px;
+
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;  
 }
 
 .clients-list {
@@ -569,13 +576,15 @@ a {
 
 .clients-item + .clients-item::after {
     content: "";
+
     position: absolute;
-    width: 2px;
-    height: 52px;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
 
+    width: 2px;
+    height: 52px;
+    
     background-color: #eeeeee;
 }
 
@@ -597,13 +606,11 @@ a {
 }
 
 .map {
-    background: url("../img/map.png") no-repeat top center;
-    height: 416px;
-}
-
-.map .container {
     position: relative;
-    width: 1440px;
+
+    height: 416px;
+    
+    background: url("../img/map.png") no-repeat top center;
 }
 
 .map-marker {
@@ -615,12 +622,13 @@ a {
 .write-us {
     position: absolute;
     top: 54px;
-    left: 140px;
+    left: calc(50% - 580px);
+
     width: 319px;
-    padding-top: 49px;
-    padding-right: 50px;
+    padding-top: 50px;
+    padding-right: 49px;
     padding-bottom: 47px;
-    padding-left: 50px;
+    padding-left: 51px;
     box-sizing: border-box;
 
     text-align: left;
@@ -694,13 +702,12 @@ a {
 }
 
 .write-modal {
-    display: none;
-
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    
+    display: none;
     width: 760px;
     padding-top: 55px;
     padding-right: 100px;
@@ -725,6 +732,7 @@ a {
 
 .modal-close {
     position: absolute;
+
     width: 21px;
     height: 21px;
 
@@ -736,6 +744,8 @@ a {
     background-color: #ffffff;
 
     opacity: 0.3;
+
+    cursor: pointer;
 }
 
 .modal-close:hover,
@@ -859,7 +869,7 @@ a {
     justify-content: space-between;
     width: 260px;
     margin: 0;
-    margin-right: 139px;
+    margin-right: 140px;
     padding: 0;
 
     list-style: none;
@@ -892,6 +902,7 @@ a {
 
 .discount {
     margin-right: auto;
+    padding-top: 2px;
 }
 
 .discount-slogan,
@@ -928,36 +939,37 @@ a {
 }
 
 .catalog {
-    margin-top: 43px;
+    margin-top: 40px;
 }
 
 .catalog .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
 }
 
 .catalog-filter {
     width: 261px;
+    margin-top: 15px;
 }
 
 .filter-form fieldset {
     margin: 0;
     padding: 0;
+
     border: none;
 }
 
 .filter-form .filter-form-price {
-    margin-bottom: 52px;
+    margin-bottom: 53px;
 }
 
 .filter-form .filter-form-grid {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
 }
 
 .filter-form .filter-form-features {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
 
 .filter-form-title {
@@ -966,6 +978,10 @@ a {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+}
+
+.filter-form-price .filter-form-title {
+    letter-spacing: 0.18px;
 }
 
 .range-filter {
@@ -978,12 +994,11 @@ a {
 
     height: 41px;
     margin-bottom: 15px;
-    padding-top: 39px;
+    padding-top: 38px;
     padding-right: 20px;
     padding-left: 20px;
 
     background-color: #eeeeee;
-
     border-radius: 5px;
 }
 
@@ -1002,7 +1017,7 @@ a {
 
 .range-controls .toggle {
    position: absolute;
-   top: 31px;
+   top: 29px;
    left: 0;
 
     width: 4px;
@@ -1013,6 +1028,7 @@ a {
     background-color: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
+
     cursor: pointer;
 }
 
@@ -1074,18 +1090,22 @@ input::-webkit-inner-spin-button {
 .radio-input,
 .checkbox-input {
     position: absolute;
+
     width: 1px;
     height: 1px;
+
     overflow: hidden;
     clip: rect(0 0 0 0);
 }
 
 .radio-label,
 .checkbox-label {
-    display: inline-block;
     position: relative;
+    
+    display: inline-block;
     padding-left: 36px;
-    padding-bottom: 20px;
+    padding-top: 2px;
+    padding-bottom: 18px;
 
     line-height: 20px;
     
@@ -1093,47 +1113,55 @@ input::-webkit-inner-spin-button {
 }
 
 .radio-label::before {
-    position: absolute;
     content: "";
-    width: 25px;
-    height: 25px;
+    
+    position: absolute;
     top: 0;
     left: 0;
 
+    width: 25px;
+    height: 25px;
+    
     background: url("../img/radio-off.svg") no-repeat;
     opacity: 0.4;
 }
 
 .radio-input:checked + .radio-label::before {
-    position: absolute;
     content: "";
-    width: 25px;
-    height: 25px;
+    
+    position: absolute;
     top: 0;
     left: 0;
 
+    width: 25px;
+    height: 25px;
+    
     background: url("../img/radio-on.svg") no-repeat;
 }
 
 .checkbox-label::before {
-    position: absolute;
     content: "";
-    width: 25px;
-    height: 25px;
+    
+    position: absolute;
     top: 0;
     left: 0;
 
+    width: 25px;
+    height: 25px;
+    
     background: url("../img/checkbox-off.svg") no-repeat;
     opacity: 0.4;
 }
 
 .checkbox-input:checked + .checkbox-label::before {
-    position: absolute;
     content: "";
-    width: 25px;
-    height: 25px;
+    
+    position: absolute;
     top: 0;
     left: 0;
+
+    width: 25px;
+    height: 25px;
 
     background: url("../img/checkbox-on.svg") no-repeat;
 }
@@ -1170,10 +1198,10 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-main {
-    width: 760px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 760px;
 }
 
 .catalog-sort {
@@ -1232,7 +1260,6 @@ input::-webkit-inner-spin-button {
 .sort-item a:active,
 .sort-item-current a {
     color: #000000;
-
     opacity: 1;
 }
 
@@ -1242,29 +1269,35 @@ input::-webkit-inner-spin-button {
 
 .sort-arrows .sort-item a {
     position: relative;
+
     padding-left: 11px;
+    vertical-align: bottom;
 }
 
 .arrow-down a {
-    position: absolute;
     content: "";
-    width: 11px;
-    height: 10px;
+    
+    position: absolute;
     top: 0;
     left: 0;
+
+    width: 11px;
+    height: 10px;
     margin-right: 18px;
 
     background: url("../img/icon-down-dir.svg") no-repeat;
 }
 
 .arrow-up a {
-    position: absolute;
     content: "";
-    width: 11px;
-    height: 10px;
+    
+    position: absolute;
     top: 0;
     left: 0;
 
+    width: 11px;
+    height: 10px;
+    
     background: url("../img/icon-up-dir.svg") no-repeat;
 }
 
@@ -1291,8 +1324,9 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-item::before {
-    position: absolute;
     content: "";
+    
+    position: absolute;
     top: 0;
     left: 0;
 
@@ -1309,17 +1343,16 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-item-info {
-    display: none;
-
     position: absolute;
     bottom: 0;
     left: 0;
+    
+    display: none;
     padding-top: 28px;
     padding-right: 60px;
     padding-bottom: 38px;
     padding-left: 60px;
     box-sizing: border-box;
-
     width: 100%;
     height: 231px;
 
@@ -1382,10 +1415,10 @@ input::-webkit-inner-spin-button {
 
 .pagination-item a {
     display: block;
-
     width: 50px;
     height: 50px;
     padding: 17px;
+    box-sizing: border-box;
 
     font-size: 16px;
     line-height: 18px;
@@ -1393,8 +1426,6 @@ input::-webkit-inner-spin-button {
     color: #000000;
     text-transform: uppercase;
     text-align: center;
-    
-    box-sizing: border-box;
 
     background-color: #eeeeee;
 }
@@ -1417,6 +1448,5 @@ input::-webkit-inner-spin-button {
 
 .pagination-item-current a {
     background-color: #ffffff;
-
     box-shadow: inset 0 0 0 3px #dbdbdb;
 }
