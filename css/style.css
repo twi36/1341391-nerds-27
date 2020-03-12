@@ -104,7 +104,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    max-width: 450px;
+    max-width: 500px;
     margin: 0;
     padding: 0;
     padding-top: 7px;
@@ -113,8 +113,9 @@ a {
     list-style: none;
 }
 
-.menu-item + .menu-item {
-    margin-left: 46px;
+.menu-item {
+    margin-right: 23px;
+    margin-left: 23px;
 }
 
 .menu-item a,
@@ -188,7 +189,7 @@ a {
 .slider {
     position: relative;
 
-    height: 421px;
+    min-height: 421px;
     margin-bottom: 80px;
 
     background-color: #eeeeee;
@@ -205,7 +206,7 @@ a {
     display: none;
 
     width: 1160px;
-    height: 421px;
+    min-height: 421px;
 
     background-repeat: no-repeat;
 }
@@ -317,6 +318,8 @@ a {
 .slides-item-info .button {
     padding-right: 55px;
     padding-left: 54px;
+    margin-bottom: 80px;
+    max-width: 400px;
 }
 
 .services {
@@ -442,7 +445,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
 }
 
 .about-additional p {
@@ -516,12 +519,14 @@ a {
 
 .about-additional-numbers ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .about-additional-numbers li {
     width: 120px;
+    margin-bottom: 18px;
 
     line-height: 18px;
     text-align: left;
@@ -547,8 +552,8 @@ a {
 }
 
 .clients .container {
-    padding-top: 46px;
-    padding-bottom: 44px;
+    padding-top: 44px;
+    padding-bottom: 40px;
 
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;  
@@ -558,9 +563,11 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     margin: 0;
+    margin-right: -20px;
+    margin-left: -20px;
     padding: 0;
 
     line-height: 0;
@@ -572,6 +579,7 @@ a {
     position: relative;
 
     width: 25%;
+    padding-top: 5px;
 }
 
 .clients-item + .clients-item::after {
@@ -607,16 +615,34 @@ a {
 
 .map {
     position: relative;
+    z-index: -2;
 
     height: 416px;
     
     background: url("../img/map.png") no-repeat top center;
 }
 
-.map-marker {
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 416px;
+}
+
+.map::after {
+    content: "";
+
     position: absolute;
     top: 89px;
-    left: 820px;
+    left: calc(50% + 100px);
+    z-index: -1;
+
+    width: 231px;
+    height: 190px;
+
+    background: url("../img/map-marker.png") no-repeat;
 }
 
 .write-us {
@@ -625,7 +651,7 @@ a {
     left: calc(50% - 580px);
 
     width: 319px;
-    padding-top: 50px;
+    padding-top: 49px;
     padding-right: 49px;
     padding-bottom: 47px;
     padding-left: 51px;
@@ -866,10 +892,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    width: 260px;
+    justify-content: flex-start;
+    width: 271px;
     margin: 0;
-    margin-right: 140px;
+    margin-right: 130px;
     padding: 0;
 
     list-style: none;
@@ -881,9 +907,11 @@ a {
     align-items: center;
     width: 79px;
     height: 79px;
-    border-radius: 50%;
+    
+    margin-right: 11px;
 
     background-color: #e1e1e1;
+    border-radius: 50%;
 }
 
 .social-button:hover,
@@ -1225,6 +1253,7 @@ input::-webkit-inner-spin-button {
 .sort-list,
 .sort-arrows {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
@@ -1354,7 +1383,7 @@ input::-webkit-inner-spin-button {
     padding-left: 60px;
     box-sizing: border-box;
     width: 100%;
-    height: 231px;
+    min-height: 231px;
 
     text-align: center;
 
