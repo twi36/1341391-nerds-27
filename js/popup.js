@@ -30,6 +30,7 @@ close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("write-modal-show");
     popup.classList.remove("write-modal-error");
+    //popup.classList.add("write-modal-close");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -51,6 +52,7 @@ window.addEventListener("keydown", function (evt) {
         if (popup.classList.contains("write-modal-show")) {
             popup.classList.remove("write-modal-show");
             popup.classList.remove("write-modal-error");
+            //popup.classList.add("write-modal-close");
         }
     }
 });
