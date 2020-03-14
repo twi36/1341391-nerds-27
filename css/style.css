@@ -332,18 +332,16 @@ a {
     position: relative;
 }
 
-.services .container {
-    padding-bottom: 80px;
-
-    border-bottom: 2px solid #eeeeee;
-}
-
 .services-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
+    
     padding: 0;
+    padding-bottom: 80px;
+
+    border-bottom: 2px solid #eeeeee;
 
     list-style: none;
 }
@@ -558,15 +556,9 @@ a {
     margin-bottom: 80px;
 }
 
-.clients .container {
-    padding-top: 44px;
-    padding-bottom: 40px;
-
-    border-top: 2px solid #eeeeee;
-    border-bottom: 2px solid #eeeeee;  
-}
-
 .clients-list {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -576,10 +568,38 @@ a {
     margin-right: -20px;
     margin-left: -20px;
     padding: 0;
+    padding-top: 44px;
+    padding-bottom: 44px;
 
     line-height: 0;
 
     list-style: none;
+}
+
+.clients-list::before {
+    content:"";
+
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+    width: 1160px;
+    height: 2px;
+
+    background-color: #eeeeee;
+}
+
+.clients-list::after {
+    content:"";
+
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+    width: 1160px;
+    height: 2px;
+
+    background-color: #eeeeee;
 }
 
 .clients-item {
@@ -638,20 +658,6 @@ a {
     height: 416px;
 }
 
-.map::after {
-    content: "";
-
-    position: absolute;
-    top: 89px;
-    left: calc(50% + 100px);
-    z-index: -1;
-
-    width: 231px;
-    height: 190px;
-
-    background: url("../img/map-marker.png") no-repeat;
-}
-
 .write-us {
     position: absolute;
     top: 54px;
@@ -694,6 +700,10 @@ a {
 
 .write-us-phone {
     margin-bottom: 37px;
+}
+
+.write-us-phone a {
+    color: #666666;
 }
 
 .write-us .button {
