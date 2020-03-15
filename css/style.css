@@ -358,17 +358,16 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin: 0;
 
     padding: 0;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 
     border-bottom: 2px solid #eeeeee;
 
@@ -377,9 +376,11 @@ a {
 
 .services-item {
     width: 300px;
+    margin-right: 100px;
+    margin-bottom: 40px;
 }
 
-.services-item:nth-child(3) {
+.services-item:nth-child(3n) {
     margin-right: 60px;
 }
 
@@ -1436,10 +1437,10 @@ a {
 }
 
 
-.radio-input:hover + .radio-label::before,
-.radio-input:focus + .radio-label::before,
-.checkbox-input:hover + .checkbox-label::before,
-.checkbox-input:focus + .checkbox-label::before {
+.radio-input:not(:disabled):hover + .radio-label::before,
+.radio-input:not(:disabled):focus + .radio-label::before,
+.checkbox-input:not(:disabled):hover + .checkbox-label::before,
+.checkbox-input:not(:disabled):focus + .checkbox-label::before {
     opacity: 1;
 }
 
@@ -1740,12 +1741,12 @@ a {
     width: 260px;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item:not(.pagination-item-current) a:hover,
+.pagination-item:not(.pagination-item-current) a:focus {
     background-color: #dfdfdf;
 }
 
-.pagination-item a:active {
+.pagination-item:not(.pagination-item-current) a:active {
     color: rgba(0, 0, 0, 0.3);
 
     background-color: #d5d5d5;
