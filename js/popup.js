@@ -9,13 +9,14 @@ var email = popup.querySelector("[name=email]");
 button.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("write-modal-show");
+    popup.classList.remove("write-modal-close");
     username.focus();
 });
 
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("write-modal-close");
-    //popup.classList.remove("write-modal-show");
+    popup.classList.remove("write-modal-show");
     popup.classList.remove("write-modal-error");
     
 });
@@ -34,7 +35,7 @@ window.addEventListener("keydown", function (evt) {
         evt.preventDefault();
         if (popup.classList.contains("write-modal-show")) {
                 popup.classList.add("write-modal-close");
-                //popup.classList.remove("write-modal-show");
+                popup.classList.remove("write-modal-show");
                 popup.classList.remove("write-modal-error");
         }
     }

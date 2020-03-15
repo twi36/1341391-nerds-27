@@ -54,7 +54,7 @@ a {
 
     background-color: #fb565a;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
 
     cursor: pointer;
 }
@@ -300,7 +300,7 @@ a {
 
 .slides-item-info {
     display: inline-block;
-    width: 515px;
+    width: 520px;
     margin-top: 68px;
     vertical-align: middle;
    
@@ -606,7 +606,7 @@ a {
     position: relative;
 
     width: 25%;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 .clients-item + .clients-item:not(:nth-child(4n+1))::before {
@@ -663,10 +663,10 @@ a {
     top: 54px;
 
     width: 319px;
-    padding-top: 49px;
+    padding-top: 48px;
     padding-right: 49px;
     padding-bottom: 47px;
-    padding-left: 51px;
+    padding-left: 50px;
     box-sizing: border-box;
 
     text-align: left;
@@ -687,6 +687,7 @@ a {
 .write-us-address,
 .write-us-phone {
     margin: 0;
+    margin-left: 2px;
 
     font-size: 16px;
     line-height: 18px;
@@ -908,7 +909,7 @@ a {
 }
 
 .footer {
-    padding-top: 69px;
+    padding-top: 68px;
     padding-bottom: 69px;
 }
 
@@ -961,7 +962,6 @@ a {
 
 .discount {
     margin-right: auto;
-    padding-top: 2px;
 }
 
 .discount-slogan,
@@ -1270,7 +1270,7 @@ a {
     flex-direction: row;
     align-items: baseline;
 
-    margin-bottom: 37px;
+    margin-bottom: 39px;
 }
 
 .sort-title {
@@ -1446,7 +1446,7 @@ a {
 }
 
 .catalog-item-description {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
 
     font-size: 16px;
     line-height: 18px;
@@ -1456,7 +1456,7 @@ a {
 
 .catalog-item .button {
     padding-right: 60px;
-    padding-left: 62px;
+    padding-left: 60px;
 }
 
 .pagination-list {
@@ -1466,7 +1466,7 @@ a {
     justify-content: flex-start;
     margin: 0;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
 
     list-style: none;
 }
