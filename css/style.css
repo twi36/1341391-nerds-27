@@ -1431,6 +1431,13 @@ a {
     background: url("../img/checkbox-on.svg") no-repeat;
 }
 
+.radio-input:disabled + .radio-label,
+.checkbox-input:disabled + .checkbox-label {
+    color: rgba(40, 49, 54, 0.3);
+
+    cursor: auto;
+}
+
 .radio-input:disabled + .radio-label::before,
 .checkbox-input:disabled + .checkbox-label::before {
     opacity: 0.1;
